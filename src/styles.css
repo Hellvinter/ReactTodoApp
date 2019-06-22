@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  background: url("https://images.unsplash.com/photo-1515041219749-89347f83291a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80")
+    center no-repeat;
+  background-size: cover;
+}
+
+.Todo {
+  text-align: center;
+}
+
+.Todo-list {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.Todo-item {
+  max-width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0.5rem;
+  border-radius: 20px 0 20px 0;
+  background: rgba(69, 74, 84, 0.6);
+  color: #fff;
+}
+
+.Todo-item--task {
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+
+.Todo-completed {
+  border: none;
+  margin-right: 0.1rem;
+  padding: 0.3rem;
+  background-color: rgba(63, 101, 32, 0.6);
+}
+
+.Todo-erase {
+  border: none;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  background-color: rgba(141, 41, 35, 0.6);
+}
+
+.Todo-form--input {
+  padding: 0.3rem;
+  border: 1.5px solid rgba(69, 74, 84, 0.6);
+  border-radius: 0% 30%;
+  box-shadow: 4px 5px 3px 0px #2c2c2c;
+}
+
+@media screen and (max-width: 739.99px) {
+  .Todo-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Todo-completed {
+    margin-right: 0.2rem;
+  }
+  .Todo-erase {
+    margin-right: 0;
+  }
+  .Todo-completed,
+  .Todo-erase {
+    margin-bottom: 1rem;
+  }
+}
