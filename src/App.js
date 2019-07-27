@@ -35,24 +35,24 @@ function App() {
         </div>
       </div>
     );
-  };
+  }
 
   const addTodo = task => {
     const newTodo = [...todos, { task }];
     setTodos(newTodo);
-  };
+  }
 
   const Completed = index => {
     const newTodo = [...todos];
     newTodo[index].completed = true;
     setTodos(newTodo);
-  };
+  }
 
   const Erase = index => {
     const removeTodo = [...todos];
     removeTodo.splice(index, 1);
     setTodos(removeTodo);
-  };
+  }
 
   return (
     <div className="App">

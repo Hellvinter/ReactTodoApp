@@ -9,9 +9,9 @@ const TodoForm = ({ addTodo }) => {
   const handleSubmit = e => {
     e.preventDefault();
     value ? addTodo(value) : setValue("");
-  };
+  }
 
-  const changeInput = e => setValue(e.target.value);
+  const changeInput = e => setValue(e.target.value)
 
   return (
     <form onSubmit={handleSubmit}>
@@ -24,7 +24,7 @@ const TodoForm = ({ addTodo }) => {
       />
     </form>
   );
-};
+}
 
 export default TodoForm;
 
